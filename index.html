@@ -4,52 +4,121 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home - Nous Cursos</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+            nav,
+            footer {
+                background-color: #333;
+                text-align: center;
+                padding-top: 0.25in;
+                padding-bottom: 0.25in;
+                color: #fff;
+            }
+            nav li.nav-link > a,
+            footer a {
+                text-decoration: none;
+                color: #fff;
+            }
+            nav li.nav-link {
+                display: inline;
+                list-style: none;
+                padding-right: 0.75in;
+                padding-left: 0.75in;
+            }
+            #container {
+                position: relative;
+                min-height: 100%;
+            }
+            main {
+                padding-bottom: 1.5in;
+            }
+            
+            h1,h2,h3,h4,h5,h6,p {
+                margin: 0.5em;
+                padding: 0.5em;
+            }
+            h1,h2,h3,h4,h5,h6 {
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
+        <nav>
+            <ul>
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#">Cursos</a></li>
+                <li class="nav-link"><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
         <header>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Cursos</a>
-                <a href="#">Sobre</a>
-            </nav>
             <h1>Nous Cursos</h1>
             <h2>Para aqueles que amam aprender</h2>
-            <p>Somos uma insituição de ensino focada em prover cursos de extensão de qualidade com grande variedade de tópicos e disciplinas.</p>
+            <p>
+                Somos uma insituição de ensino focada em prover cursos de
+                extensão de qualidade com grande variedade de tópicos e
+                disciplinas.
+            </p>
         </header>
-        <main>
-            <section>
-                <h1>Conheça alguns dos nossos cursos</h1>
-                <article>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>
-                        Aprenda a criar websites e aplicações web utilizando
-                        HTML CSS, JavaScript e PHP.
-                    </p>
-                </article>
-                <article>
-                    <h3>Inglês Instrumental</h3>
-                    <p>Ensino de inglês com foco em leitura.</p>
-                </article>
-                <article>
-                    <h3>Empreendedorismo</h3>
-                    <p>Desenvolva competências orientadas ao gerenciamento e crescimento do seu negócio.</p>
-                </article>
-                <article>
-                    <h3>Orientação Nutricional e Saúde</h3>
-                    <p>Orientações sobre como viver uma vida mais saudável.</p>
-                </article>
-                <article>
-                    <h3>Desenvolvimento de jogos</h3>
-                    <p>Ensino focado na utilização de ferramentas como Unity e GameMaker 2 para criação de jogos 2D e 3D.</p>
-                </article>
-            </section>
-        </main>
-        <footer>
-            <address>
-                E-Mail: <a href="mailto:atendimento@nous.com">atendimento@nous.com</a> | 
-                Telefone: <a href="tel:+55 71 90501-4581">+55 71 90501-4581</a><!-- gerado com https://randommer.io/Phone -->
-            </address>
-            <span>&copy; Nous Cursos 2020</span>
-        </footer>
+        <div id="container">
+            <main>
+                <section>
+                    <h1>Conheça alguns dos nossos cursos</h1>
+                    <article class="curso-item">
+                        <h3>Desenvolvimento Web</h3>
+                        <p>
+                            Aprenda a criar websites e aplicações web utilizando
+                            HTML CSS, JavaScript e PHP.
+                        </p>
+                    </article>
+                    <article class="curso-item">
+                        <h3>Inglês Instrumental</h3>
+                        <p>Ensino de inglês com foco em leitura.</p>
+                    </article>
+                    <article class="curso-item">
+                        <h3>Empreendedorismo</h3>
+                        <p>
+                            Desenvolva competências orientadas ao gerenciamento
+                            e crescimento do seu negócio.
+                        </p>
+                    </article>
+                    <article class="curso-item">
+                        <h3>Orientação Nutricional e Saúde</h3>
+                        <p>
+                            Orientações sobre como viver uma vida mais saudável.
+                        </p>
+                    </article>
+                    <article class="curso-item">
+                        <h3>Desenvolvimento de jogos</h3>
+                        <p>
+                            Ensino focado na utilização de ferramentas como
+                            Unity e GameMaker 2 para criação de jogos 2D e 3D.
+                        </p>
+                    </article>
+                </section>
+            </main>
+            <footer
+                style="
+                    position: absolute;
+                    bottom: 0px;
+                    width: 100%;
+                    height: 0.5in;
+                "
+            >
+                <address>
+                    E-Mail:
+                    <a href="mailto:atendimento@nous.com"
+                        >atendimento@nous.com</a
+                    >
+                    | Telefone:
+                    <a href="tel:+55 71 90501-4581">+55 71 90501-4581</a
+                    ><!-- gerado com https://randommer.io/Phone -->
+                </address>
+                <span>&copy; Nous Cursos 2020</span>
+            </footer>
+        </div>
     </body>
 </html>
