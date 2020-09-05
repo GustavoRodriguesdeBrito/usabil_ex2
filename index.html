@@ -36,7 +36,20 @@
             main {
                 padding-bottom: 1.5in;
             }
-            
+            .curso-fileira {
+                margin-left: 0.5in;
+                margin-right: 0.5in;
+                text-align: center;
+                padding-top: 0.25in;
+                padding-bottom: 0.25in;
+            }
+            .curso-item {
+                border: 1px solid #000;
+                display: inline-block;
+                width: 15em;
+                height: 15em;
+                vertical-align: top;
+            }
             h1,h2,h3,h4,h5,h6,p {
                 margin: 0.5em;
                 padding: 0.5em;
@@ -67,37 +80,43 @@
             <main>
                 <section>
                     <h1>Conheça alguns dos nossos cursos</h1>
-                    <article class="curso-item">
-                        <h3>Desenvolvimento Web</h3>
-                        <p>
-                            Aprenda a criar websites e aplicações web utilizando
-                            HTML CSS, JavaScript e PHP.
-                        </p>
-                    </article>
-                    <article class="curso-item">
-                        <h3>Inglês Instrumental</h3>
-                        <p>Ensino de inglês com foco em leitura.</p>
-                    </article>
-                    <article class="curso-item">
-                        <h3>Empreendedorismo</h3>
-                        <p>
-                            Desenvolva competências orientadas ao gerenciamento
-                            e crescimento do seu negócio.
-                        </p>
-                    </article>
-                    <article class="curso-item">
-                        <h3>Orientação Nutricional e Saúde</h3>
-                        <p>
-                            Orientações sobre como viver uma vida mais saudável.
-                        </p>
-                    </article>
-                    <article class="curso-item">
-                        <h3>Desenvolvimento de jogos</h3>
-                        <p>
-                            Ensino focado na utilização de ferramentas como
-                            Unity e GameMaker 2 para criação de jogos 2D e 3D.
-                        </p>
-                    </article>
+                    <div class="curso-fileira">
+                        <article class="curso-item">
+                            <h3>Desenvolvimento Web</h3>
+                            <p>
+                                Aprenda a criar websites e aplicações web
+                                utilizando HTML CSS, JavaScript e PHP.
+                            </p>
+                        </article>
+                        <article class="curso-item">
+                            <h3>Inglês Instrumental</h3>
+                            <p>Ensino de inglês com foco em leitura.</p>
+                        </article>
+                        <article class="curso-item">
+                            <h3>Empreendedorismo</h3>
+                            <p>
+                                Desenvolva competências orientadas ao
+                                gerenciamento e crescimento do seu negócio.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="curso-fileira">
+                        <article class="curso-item">
+                            <h3>Orientação Nutricional e Saúde</h3>
+                            <p>
+                                Orientações sobre como viver uma vida mais
+                                saudável.
+                            </p>
+                        </article>
+                        <article class="curso-item">
+                            <h3>Desenvolvimento de jogos</h3>
+                            <p>
+                                Ensino focado na utilização de ferramentas como
+                                Unity e GameMaker 2 para criação de jogos 2D e
+                                3D.
+                            </p>
+                        </article>
+                    </div>
                 </section>
             </main>
             <footer
