@@ -4,12 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home - Nous Cursos</title>
+        <link rel="stylesheet" href="css/style.css">
         <style>
-            * {
-                margin: 0;
-                padding: 0;
-                font-family: 'Roboto', sans-serif;
-            }
+            
             nav,
             footer {
                 background-color: #333;
@@ -29,6 +26,22 @@
                 padding-right: 0.75in;
                 padding-left: 0.75in;
             }
+            @media screen and (min-width:320px) and (max-width:574px){
+                nav li.nav-link {
+                    display: block;
+                }
+            }
+            #banner {
+                min-height: 60vh;
+                background-image: linear-gradient(#00000080,#000000b3), url(img/download.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                color: #fff;
+                padding: 1em;
+            }
+            /*#banner > p {
+                margin-right:40%;
+            }*/
             #container {
                 position: relative;
                 min-height: 100%;
@@ -40,22 +53,30 @@
                 margin-left: 0.5in;
                 margin-right: 0.5in;
                 text-align: center;
-                padding-top: 0.25in;
-                padding-bottom: 0.25in;
+            }/*782*/
+            @media screen and (min-width: 782px) {
+                .curso-fileira {
+                    padding-top: 0.25in;
+                    padding-bottom: 0.25in;
+                }
             }
             .curso-item {
                 border: 1px solid #000;
+                border-radius: 15px;
                 display: inline-block;
-                width: 15em;
-                height: 15em;
+                width: 14em;
+                height: 14em;
                 vertical-align: top;
             }
             h1,h2,h3,h4,h5,h6,p {
                 margin: 0.5em;
                 padding: 0.5em;
             }
-            h1,h2,h3,h4,h5,h6 {
+            h1,h2,h3,h4,h5,h6,p {
                 text-align: center;
+            }
+            #banner>h1.grande, #banner>h2.grande, #banner>p.grande {
+                font-size: xx-large;
             }
         </style>
     </head>
@@ -67,10 +88,10 @@
                 <li class="nav-link"><a href="#">Sobre</a></li>
             </ul>
         </nav>
-        <header>
-            <h1>Nous Cursos</h1>
-            <h2>Para aqueles que amam aprender</h2>
-            <p>
+        <header id="banner">
+            <h1 class="grande">Nous Cursos</h1>
+            <h2 class="grande">Para aqueles que amam aprender</h2>
+            <p class="grande">
                 Somos uma insituição de ensino focada em prover cursos de
                 extensão de qualidade com grande variedade de tópicos e
                 disciplinas.
@@ -114,6 +135,12 @@
                                 Ensino focado na utilização de ferramentas como
                                 Unity e GameMaker 2 para criação de jogos 2D e
                                 3D.
+                            </p>
+                        </article>
+                        <article class="curso-item">
+                            <h3>Administração do tempo</h3>
+                            <p>
+                                Desenvolvimento de capacidades de organização de tempo.
                             </p>
                         </article>
                     </div>
